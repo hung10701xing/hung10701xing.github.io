@@ -3,73 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI作業外包</title>
+    <title>軟體服務</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+        .w3-sidebar {
+          z-index: 3;
+          width: 250px;
+          top: 43px;
+          bottom: 0;
+          height: inherit;
+        }
+        </style>
 </head>
 <body>
 
-<!-- 自介 -->
-<section>
-    <h2>自介</h2>
-    <p>您好，我叫羅賓。</p>
-    <p>目前正申請國外資工博士，有點空閒，正在賺外快籌學費。</p>
-    <p>目前有提供對於AI類神經網路的作業輔導。</p>
-</section>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-theme-l1">羅賓</a>
+        <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a> -->
+      </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Menu</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#1">自介</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#2">服務</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#3">費用&工作時間</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#4">聯繫方式</a>
+    </nav>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+    
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal" id="1">自介</h1>
+          <p>您好，我叫羅賓。</p>
+          <p>目前正申請國外資工博士，有點空閒，正在賺外快籌學費。</p>
+          <p>目前有提供對於AI類神經網路的作業輔導。</p>
+        
+        </div>
+      </div>
+    
+      <div class="w3-row">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal" id="2">服務</h1>
+          <p>如果您有完成不了的困擾，可以把作業交給我。</p>
+        <h3 class="w3-text-teal">優點</h3>
+          <ol>
+            <li>省下找資料的時間</li>
+            <li>省下找條參的時間</li>
+            <li>省下設備不夠的困擾</li>
+        </ol>
+        <p>沒經驗的新手可能要花整整一個禮拜以上的時間，挫折又困擾。</p>
+        <p>但我這邊可以，3天左右就可以訓練好一個一般的模型。</p>
+        <p>如果ChatGPT可以幫你搞定，我也非常推薦。</p>
 
-<!-- 服務 -->
-<section>
-    <h2>服務</h2>
-    <p>如果您有完成不了的困擾，可以把作業交給我。</p>
-</section>
+        </div>
+      </div>
+    
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal" id="3">費用&工作時間</h1>
 
-<!-- 優點 -->
-<section>
-    <h2>優點</h2>
-    <ol>
-        <li>省下找資料的時間</li>
-        <li>省下找條參的時間</li>
-        <li>省下設備不夠的困擾</li>
-    </ol>
-    <p>沒經驗的新手可能要花整整一個禮拜以上的時間，挫折又困擾。</p>
-    <p>但我這邊可以，3天左右就可以訓練好一個一般的模型。</p>
-    <p>如果ChatGPT可以幫你搞定，我也非常推薦。</p>
-</section>
+          <h4>1. 費用</h4>
+          <ol>
+              <li>諮詢：免費，可以透過文字或者語音，了解您的作業需求與期望</li>
+              <li>輔導：
+                  <ol>
+                      <li>A方案：100 (1次)</li>
+                      <li>B方案：1000 (15分鐘)</li>
+                  </ol>
+              </li>
+              <li>作業完成：case by case，需要估價，底價 3000。</li>
+          </ol>
+          <p>回答不出來的不算費用，對答案不滿意不用給。</p>
 
-<!-- 費用 -->
-<section>
-    <h2>費用</h2>
-    <ol>
-        <li>諮詢：免費，可以透過文字或者語音，了解您的作業需求與期望</li>
-        <li>輔導：
-            <ol>
-                <li>A方案：100 (1次)</li>
-                <li>B方案：1000 (15分鐘)</li>
-            </ol>
-        </li>
-        <li>作業完成：case by case，需要估價，底價 3000。</li>
-    </ol>
-    <p>回答不出來的不算費用，對答案不滿意不用給。</p>
-</section>
+          <h4>2. 回覆時間</h4>
+          <p>最近正幫幾個碩博提供服務，所以時間不確定，最快1~3天與您回覆。</p>
 
-<!-- 時間 -->
-<section>
-    <h2>回覆時間</h2>
-    <p>最近正幫幾個碩博提供服務，所以時間不確定，最快1~3天與您回覆。</p>
-</section>
+            <h4>3. 收費方式</h4>
+            <p>匯款方式：銀行</p>
+            <p>作業服務：1/3訂金，2/3驗收達標後給付</p>
+            <p>諮詢服務：後結</p>
+        </div>
+      </div>
 
-<!-- 聯繫方式 -->
-<section>
-    <h2>聯繫方式</h2>
-    <p>臉書：<a href="https://www.facebook.com/profile.php?id=100014658640856">https://www.facebook.com/profile.php?id=100014658640856</a></p>
-    <p>信箱：hung10701xing@gmail.com</p>
-</section>
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal"  id="4">聯繫方式</h1>
+            <p>臉書：<a href="https://www.facebook.com/profile.php?id=100014658640856">https://www.facebook.com/profile.php?id=100014658640856</a></p>
+            <p>信箱：hung10701xing@gmail.com</p>
 
-<!-- 收費方式 -->
-<section>
-    <h2>收費方式</h2>
-    <p>銀行匯款</p>
-    <p>作業預先付：1/3訂金，2/3驗收達標後給付</p>
-    <p>諮詢：後結</p>
-</section>
-
-</body>
+        </div>
+      </div>
+    
+      <!-- Pagination -->
+      <!-- <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a class="w3-button w3-black" href="#">1</a>
+          <a class="w3-button w3-hover-black" href="#">2</a>
+          <a class="w3-button w3-hover-black" href="#">3</a>
+          <a class="w3-button w3-hover-black" href="#">4</a>
+          <a class="w3-button w3-hover-black" href="#">5</a>
+          <a class="w3-button w3-hover-black" href="#">»</a>
+        </div>
+      </div> -->
+    
+      <!-- <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+          <h4>Footer</h4>
+        </div>
+    
+        <div class="w3-container w3-theme-l1">
+          <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+      </footer> -->
+    
+    <!-- END MAIN -->
+    </div>
+    
+    <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+    
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+    
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+    
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+    </script>
+    
+    </body>
 </html>
